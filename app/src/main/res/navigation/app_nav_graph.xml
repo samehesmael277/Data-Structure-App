@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_nav_graph"
+    app:startDestination="@id/loadingFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.employeemanagementsystem.ui.fragments.home.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_employeesFragment"
+            app:destination="@id/employeesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_addUpdateEmployeeFragment"
+            app:destination="@id/addUpdateEmployeeFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_arrayDataStructureFragment"
+            app:destination="@id/arrayDataStructureFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_linkedListDataStructureNFragment"
+            app:destination="@id/linkedListDataStructureNFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/employeesFragment"
+        android:name="com.example.employeemanagementsystem.ui.fragments.employees.EmployeesFragment"
+        android:label="fragment_employees"
+        tools:layout="@layout/fragment_employees" >
+        <action
+            android:id="@+id/action_employeesFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_employeesFragment_to_addUpdateEmployeeFragment"
+            app:destination="@id/addUpdateEmployeeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addUpdateEmployeeFragment"
+        android:name="com.example.employeemanagementsystem.ui.fragments.addupdateemp.AddUpdateEmployeeFragment"
+        android:label="fragment_add_update_employee"
+        tools:layout="@layout/fragment_add_update_employee" >
+        <action
+            android:id="@+id/action_addUpdateEmployeeFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_addUpdateEmployeeFragment_to_employeesFragment"
+            app:destination="@id/employeesFragment"
+            app:popUpTo="@id/employeesFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/arrayDataStructureFragment"
+        android:name="com.example.employeemanagementsystem.ui.fragments.arraydatastructure.ArrayDataStructureFragment"
+        android:label="fragment_array_data_structure"
+        tools:layout="@layout/fragment_array_data_structure" >
+        <action
+            android:id="@+id/action_arrayDataStructureFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/linkedListDataStructureNFragment"
+        android:name="com.example.employeemanagementsystem.ui.fragments.linkdelistdatastructure.LinkedListDataStructureNFragment"
+        android:label="fragment_linked_list_data_structure_n"
+        tools:layout="@layout/fragment_linked_list_data_structure_n" >
+        <action
+            android:id="@+id/action_linkedListDataStructureNFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/loadingFragment"
+        android:name="com.example.employeemanagementsystem.ui.fragments.loading.LoadingFragment"
+        android:label="fragment_loading"
+        tools:layout="@layout/fragment_loading" >
+        <action
+            android:id="@+id/action_loadingFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpTo="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+</navigation>
