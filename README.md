@@ -16,6 +16,7 @@ Data Structure Project in Android App
 <img src="https://github.com/samehesmael277/Data-Structure-App/assets/91541580/6dd2fbcc-ff2a-47fb-a5de-5377430f1e3b" width="200">&nbsp;
 <img src="https://github.com/samehesmael277/Data-Structure-App/assets/91541580/796e545e-acc2-4582-ab75-114fc060dc82" width="200">&nbsp;
 
+<br>
 
 ## Model
 * Employee (empNumber, empName, empDept, empDob, empSalary)
